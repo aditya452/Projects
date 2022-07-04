@@ -6,6 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Prakash</title>
+    <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2a524502e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon (2).ico">
     <link
@@ -14,59 +38,131 @@
 </head>
 
 <body>
-    <div class="top-container">
-        <img class="t-cloud" src="images/cloud.png" alt="cloud">
-        <h1>I'm Aditya</h1>
-        <h2>a <span class="pro">pro</span>grammer</h2>
-        <img class="b-cloud" src="images/cloud.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
+    
+    <div id="top-container">
+        <div class="sidebar">
+            <header>My Portfolio</header>
+            <ul>
+                <li><a class="nav-link" href="#top-container">Home</a></li>
+                <li><a class="nav-link" href="#middle-container">My Intro</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav-link" href="#Contact-Me">Contact Me</a></li>
+                <!-- <li>Home</li>
+                <li>My Intro</li>
+                <li>Skills</li>
+                <li>Testimonials</li>
+                <li>Contact Me</li> -->
+            </ul>
+        </div>
+        <div class="main">
+            <img class="t-cloud" src="images/cloud.png" alt="cloud">
+            <h1>I'm Aditya</h1>
+            <h3 class="typed">a <span class="auto-type"></span></h2>
+            <img class="b-cloud" src="images/cloud.png" alt="cloud-img">
+            <img class="mountain" src="images/mountain.png" alt="mountain-img">
+        </div>
     </div>
 
-    <div class="middle-container">
+    <div id="middle-container">
         <div class="profile">
-            <img width="200" src="images/profile_img.png"
+            <img class="profile_img" width="200" src="images/profile_img.png"
                 alt="profile">
             <h2>Hello</h2>
-            <p class="student">I am a first year undergraduate student in Information Technology at Delhi Technological
-                University. I am a programmer and currently learning web development HTML,CSS</p>
+            <p class="student">I am a second year undergraduate student in Information Technology at Delhi Technological
+                University. I am a programmer and currently learning and exploring web development</p>
         </div>
 
         <hr>
 
-        <div class="skills">
+        <div id="skills">
             <h2>My Skills.</h2>
             <div class="skill-row">
                 <img width="200" class="code-img" src="images\coding.png" alt="coding">
-                <h3>Problem Solving and HTML,CSS</h3>
+                <h3>Problem Solving</h3>
                 <p class="code-skill-descrip">I started leaning to code a I entered my college when I was 18 years. I
-                    have gained some experience in problem solving and now learning HTML,CSS</p>
+                    have gained some experience in problem solving and proficient in C, C++.</p>
             </div>
             <div class="skill-row">
-                <img width="200" class="sports-img" src="images\sports.png" alt="pizza">
-                <h3>Sports</h3>
-                <p class="sports-descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis blanditiis
-                    nostrum voluptas dolor illum ipsum optio eos modi odit. Nihil voluptate aut iusto quidem est, eius
-                    laudantium. Ad, beatae id? </p>
+                <img width="230" height="150" class="dev-img" src="images\dev.jpg" alt="dev">
+                <h3>Front-End Development</h3>
+                <p class="sports-descrip"> I am skilled in HTML, CSS and familiar
+                  with Javascript and frameworks such as Bootstrap. I am also familiar with git and github.</p>
             </div>
         </div>
 
-        <hr>
+        <!-- <hr> -->
 
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>If you love sports as much as I do</h3>
-            <p class="above-cont">Lets talk about how much awesome they are! We can earn to code while we play sports</p>
-            <a class="btn" href="mailto:adityaprakash01@gmail.com">CONTACT ME</a>
+        <section id="testimonials">
+            <div id="testimonials-carousels" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2 class="testimonial-text">Aditya is very Hardworking and focused person , helped me to develop intuition in programming and guided me 
+                    while coding</h2>
+                  <img class="testimonial-img" src="images/Ayush.jpg" alt="dog-profile">
+                  <em>Ayush Aryan, New Delhi</em>
+                </div>
+                <div class="carousel-item">
+                  <h2 class="testimonial-text">Aditya is a very genuine guy. He helps everyone in problem solving. Apart from these he is also good at academics 
+                    and manages things efficiently.
+                  </h2>
+                  <img class="testimonial-img" src="images/Anmol.jpg" alt="lady-profile">
+                  <em>Anmol Raj, New Delhi</em>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testimonial-text">A kind person and good friend. Creative and keen to learn new stuff. Very supportive and always ready to help me with 
+                        my work.</h2>
+                    <img class="testimonial-img" src="images/Abhay.jpg" alt="lady-profile">
+                    <em>Abhay Banyal, New Delhi</em>
+                  </div>
+               </div>
+              <a class="carousel-control-prev" href="#testimonials-carousels" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+        
+              </a>
+              <a class="carousel-control-next" href="#testimonials-carousels" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+        
+              </a>
+            </div>
+          </section>
+
+        
+        <div id="Contact-Me">
+            <div class="image">
+                <img src="images/colla.png" alt="" width="85%">
+            </div>
+            <div class="collaborate">
+                <h4>If You Want To Collaborate with me for some Projects?</h4>
+                <form>
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea placeholder="Message" id="" cols="40" rows="8"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
 
     </div>
 
     <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/aditya-prakash-a92035201/">LinkedIn</a>
-        <a class="footer-link" href="https://www.hackerrank.com/adityaprakash01">hackerrank</a>
-        <a class="footer-link" href="https://www.codechef.com/users/adityaprak01">codechef</a>
-        <p class="copyright">© 2021 Aditya Prakash.</p>
+        <footer id="footer">
+            <a href="https://www.linkedin.com/in/aditya-prakash-a92035201/"><i class=" ico fab fa-linkedin-in"></i></a>
+            <i class=" ico fab fa-instagram"></i>
+            <i class=" ico fab fa-facebook-f"></i>
+            <i class=" ico fas fa-envelope"></i>
+            <p class="copyright">© Copyright 2022 Aditya Prakash.</p>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Student","Programmer", "Front-end Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
