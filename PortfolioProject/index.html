@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="user">
+            <img src="images/profile_img.png" alt="">
+            <h3 class="name">Aditya Prakash</h3>
+            <!-- <p class="post">Programmer</p> -->
+            <h3 class="typed"><span class="auto-type"></span></h2>
+        </div>
+
+        <div class="navbars">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">My Skills</a></li>
+                <li><a href="#portfolio">Testimonials</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Aditya Prakash</span></h1>
+        <p>I'm Aditya Prakash, a Web Developer dedicated to creating exceptional web
+            experiences. With extensive knowledge in HTML, CSS, Bootstrap, JavaScript,
+            ReactJS, NodeJS, MongoDB, I bring expertise in both development and web design.
+            Let's connect and discuss. Excited to collaborate!
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name: </span> Aditya Prakash</h3>
+                <h3><span>age: </span> 21</h3>
+                <h3><span>qualification: </span> B.tech</h3>
+                <h3><span>post: </span> Programmer</h3>
+                <h3><span>language: </span> English</h3>
+                <a href="#"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+            </div>
+
+            <div class="counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>100+</span>
+                    <h3>projects completed</h3>
+                </div>
+                <div class="box">
+                    <span>430+</span>
+                    <h3>clients served</h3>
+                </div>
+                <div class="box">
+                    <span>12+</span>
+                    <h3>achievements</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="education" id="education">
+        <h1 class="heading"><span>My Skills</span></h1>
+        <div class="skill-row">
+            <img width="200" class="code-img" src="images\coding.png" alt="coding">
+            <h3>Problem Solving</h3>
+            <p class="code-skill-descrip">I started leaning to code a I entered my college when I was 18 years. I
+                have gained some experience in problem solving and proficient in C, C++.</p>
+        </div>
+        <div class="skill-row">
+            <img width="230" height="150" class="dev-img" src="images\dev.jpg" alt="dev">
+            <h3>Front-End Development</h3>
+            <p class="sports-descrip"> I am skilled in HTML, CSS and familiar
+                with Javascript and frameworks such as Bootstrap. I am also familiar with git and github.</p>
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"><span>Testimonials</span></h1>
+        <section id="testimonials">
+            <div id="testimonials-carousels" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="testimonial-text">Aditya is very Hardworking and focused person , helped me to
+                            develop intuition in programming and guided me
+                            while coding</h2>
+                        <img class="testimonial-img" src="images/Ayush.jpg" alt="dog-profile">
+                        <em>Ayush Aryan, New Delhi</em>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">Aditya is a very genuine guy. He helps everyone in problem solving.
+                            Apart from these he is also good at academics
+                            and manages things efficiently.
+                        </h2>
+                        <img class="testimonial-img" src="images/Anmol.jpg" alt="lady-profile">
+                        <em>Anmol Raj, New Delhi</em>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">A kind person and good friend. Creative and keen to learn new
+                            stuff. Very supportive and always ready to help me with
+                            my work.</h2>
+                        <img class="testimonial-img" src="images/Abhay.jpg" alt="lady-profile">
+                        <em>Abhay Banyal, New Delhi</em>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonials-carousels" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#testimonials-carousels" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+
+                </a>
+            </div>
+        </section>
+        <!-- <h1 class="heading"> my <span>portfolio</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/img1.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/img2.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/img3.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/img4.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/img5.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/img6.jpg" alt="">
+            </div>
+        </div> -->
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> me</h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i>adityaprak01@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i> +123-456-7890</h3>
+                    <h3><i class="fas fa-phone"></i> +111-222-3333</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i>adityaprak01@gmail.com</h3>
+                </div>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="text" placeholder="Project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Student", "Programmer", "Front-end Developer"],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
